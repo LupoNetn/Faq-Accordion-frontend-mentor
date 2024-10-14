@@ -1,0 +1,108 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--Dark-purple);
+}
+
+h2 {
+    color: var(--Dark-purple);
+    font-size: 1.05rem;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: var(--Grayish-purple);
+}
+
+p {
+    color: var(--Grayish-purple);
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    border-top: none;
+    color: var(--Light-pink);
+}
+
+.container {
+    position: relative;
+}
+
+.accordion-container {
+    background-color: var(--White);
+    box-sizing: border-box;
+    width: 85%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-inline: auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px grey;
+    padding: 1em;
+}
+
+.accordion-header,
+.accordion-body-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.accordion-body-flex {
+    justify-content: space-between;
+    position: relative;
+}
+
+.accordion-answer {
+    display: none;
+}
+
+.accordion-block {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden-btn {
+    position: absolute;
+    left: 94%;
+    top: 30%;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media (min-width: 372px) {
+    .head-img {
+        content: url('assets/images/background-pattern-desktop.svg');
+    }
+}
+
+@media (min-width: 600px) {
+    .accordion-container {
+        padding: 1.5em;
+    }
+}
